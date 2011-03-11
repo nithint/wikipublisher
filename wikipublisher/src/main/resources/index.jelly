@@ -1,0 +1,10 @@
+<!--
+  This view is used to render the plugin list page.
+
+  Since we don't really have anything dynamic here, let's just use static HTML. 
+-->
+<div>
+ This plugin allows you to publish the build results to a Wiki page. 
+ Writes out the build name and a link to the build on the wiki page.
+ Also writes any upstream projects and links to the upstream builds. 
+</div>

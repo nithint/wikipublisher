@@ -1,0 +1,17 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson"
+	xmlns:f="/lib/form">
+
+	<!-- show the selection only when there's something to select -->
+	<f:entry title="Wiki Site" help="${descriptor.getHelpFile('siteName')}">
+		<select class="setting-input" name="siteName">
+			<j:forEach var="s" items="${descriptor.sites}">
+				<f:option selected="${s.name==instance.siteName}">${s.name}</f:option>
+			</j:forEach>
+		</select>
+	</f:entry>
+
+	<f:entry title="Page" field="pageName" help="${descriptor.getHelpFile('pageName')}">
+		<f:textbox clazz="required"
+			 />
+	</f:entry>
+</j:jelly>
