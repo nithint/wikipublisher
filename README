@@ -1,0 +1,6 @@
+WikiPublish Plugin for Jenkins
+
+Publishes build results to a wiki page containing the build name, link back to the build and 
+any upstream builds that were included in the build. 
+
+
