@@ -3,4 +3,5 @@ WikiPublish Plugin for Jenkins
 Publishes build results to a wiki page containing the build name, link back to the build and 
 any upstream builds that were included in the build. 
 
-
+Requirements:
+The directory that java.endorsed.dirs points to must contain apache-log4j-1.2.14 or newer. 

@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.jenkins-ci.plugins</groupId>
 		<artifactId>plugin</artifactId>
-		<version>1.399</version><!-- which version of Hudson is this plugin built 
+		<version>1.400</version><!-- which version of Hudson is this plugin built 
 			against? -->
 		<relativePath>../pom.xml</relativePath>
 	</parent>
@@ -16,7 +16,6 @@
 
 	<name>Wiki Publisher</name>
 	<description>Publish build results to a Wiki page</description>
-	<url>http://wiki.jenkins-ci.org/display/JENKINS/Confluence+Publisher+Plugin</url>
 	<organization>
 		<name>OceusNetworks Inc.</name>
 	</organization>
@@ -52,7 +51,7 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/nithint/major.minor.git</url>
+		<url>https://nithint@github.com/nithint/wikipublisher.git</url>
 	</scm>
 	<dependencies>
 		<dependency>
