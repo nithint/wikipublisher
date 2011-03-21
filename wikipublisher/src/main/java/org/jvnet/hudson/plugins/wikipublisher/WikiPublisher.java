@@ -130,7 +130,7 @@ public class WikiPublisher extends Notifier
 		{
 			MediaWikiBot bot = site.connect();
 			Article article = bot.readContent(this.getPageName());
-			article.addText(text);
+			article.setText(text + article.getText());
 			article.save();
 			log(listener, "Published build results to " + site.getUrl().toString() + 
 					String.format(QUERYSTRING_F, this.getPageName()));
@@ -164,7 +164,8 @@ public class WikiPublisher extends Notifier
 				.entrySet())
 		{
 			Run upstrBuild = e.getKey().getBuildByNumber(e.getValue());
-			str.append("* " + e.getKey().getName() + "&nbsp;["
+			if(upstrBuild != null)
+				str.append("* " + e.getKey().getName() + "&nbsp;["
 					+ this.getBuildUrl(upstrBuild) + " "
 					+ upstrBuild.getDisplayName() + "]\n");
 		}
